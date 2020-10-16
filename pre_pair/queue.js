@@ -39,7 +39,7 @@ class Queue {
 
         const node = this.first;
         // assign first node to the next node in the list
-        // ergo removing the first node because it no longer has a reference pointer (can I refer to this as a pointer as it is not a linked list?)
+        // ergo removing the first node because it no longer has a reference pointer
         this.first = this.first.next;
         // if this is the last item in the queue
         if (node === this.last) {
