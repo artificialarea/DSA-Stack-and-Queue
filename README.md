@@ -24,4 +24,29 @@ added to: [**`stack-class.js`**](https://github.com/artificialarea/DSA-Stack-and
 
 ## 3. Check for palindromes using a stack
 
-see: [**`palindrome.js`**](https://github.com/artificialarea/DSA-Stack-and-Queue/blob/main/palindrom.js)
+see: [**`palindrome-checker.js`**](https://github.com/artificialarea/DSA-Stack-and-Queue/blob/main/palindrome-checker.js)
+
+
+
+<br /> 
+
+## 4. Matching parenthesis in an expression
+
+
+**v1** see: [**`matching-parentheses-v1.js`**](https://github.com/artificialarea/DSA-Stack-and-Queue/blob/main/matching-parentheses.js)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

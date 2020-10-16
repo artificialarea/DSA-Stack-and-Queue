@@ -7,11 +7,11 @@ class _Node {
 
 class Stack {
 
-    constructor(){
+    constructor() {
         this.top = null;
     }
 
-    push(data){
+    push(data) {
         if (this.top === null){
             this.top = new _Node(data, null);
             return;
@@ -22,12 +22,19 @@ class Stack {
         //why not just the node.data like with pop()?
     }
 
-    pop(){
+    pop() {
         const node = this.top;
         this.top = node.next;
         return node.data;
     }
+
+    // Integrate method into class. Previously in stackHelpers.peek service object.
+    // Preference?
+    peek() {
+        return this.top;
+    }
 }
+
 
 const stackHelpers = {
     peek: function(stack) {
@@ -56,8 +63,10 @@ const stackHelpers = {
         }
         // push the last item to our array
         items.push(stack.data);
+        // return the values
+        return items.join('');
         // return the values, joined with line breaks
-        return items.join('\n');
+        // return items.join('\n');
     },
 };
 
