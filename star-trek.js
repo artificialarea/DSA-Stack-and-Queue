@@ -1,61 +1,23 @@
-class _Node {
-    constructor(value, next){
-        this.value = value
-        this.next = next
-    }
-}
+const { 
+    Stack, 
+    stackHelpers 
+} = require('./stack-class');
 
-class StackStarTrek {
-    constructor(){
-        this.top = null
-    }
+const stackStarTrek = new Stack;
 
-    push(value){
-        if (this.top === null){
-            this.top = new _Node(value, null)
-            return;
-        }
-        const node = new _Node(value, this.top)
-        this.top = node
+let addItems = ['Kirk', 'Spock', 'McCoy', 'Scotty'];
 
-        //why not just the node.value like with pop()?
-    }
+addItems.forEach(item => stackStarTrek.push(item));
 
-    pop(){
-        const node = this.top
-        this.top = node.next
-        return node.value
-    }
-}
 
-const stackHelpers = {
-    peek: function(stack) {
-        return stack.top;
-    },
-    isEmpty: function(stack) {
-        if (stack.top === null) return true;
-        return false;
-    },
-    display: function(stack) {
-        return stack.top.value;
-    }
+console.log(stackHelpers.peek(stackStarTrek));
+console.log(stackHelpers.display(stackStarTrek));
+console.log(stackHelpers.isEmpty(stackStarTrek));
 
-}
+stackStarTrek.pop();
+stackStarTrek.pop();
+stackStarTrek.pop();
+stackStarTrek.pop();
 
-const starTrek = new StackStarTrek
-
-starTrek.push('Kirk');
-starTrek.push('Spock');
-starTrek.push('McCoy');
-starTrek.push('Scotty');
-
-// console.log(starTrek)
-// console.log(JSON.stringify(starTrek, null, 4))
-
-// console.log(stackHelpers.peek(starTrek));
-console.log(stackHelpers.isEmpty(starTrek));
-console.log(stackHelpers.display(starTrek));
-
-starTrek.pop();
-starTrek.pop();
-console.log(stackHelpers.display(starTrek));
+console.log(stackHelpers.display(stackStarTrek));
+console.log(stackHelpers.isEmpty(stackStarTrek));
