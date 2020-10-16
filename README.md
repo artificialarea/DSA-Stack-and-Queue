@@ -33,8 +33,11 @@ see: [**`palindrome-checker.js`**](https://github.com/artificialarea/DSA-Stack-a
 ## 4. Matching parenthesis in an expression
 
 
-**v1** see: [**`matching-parentheses-v1.js`**](https://github.com/artificialarea/DSA-Stack-and-Queue/blob/main/matching-parentheses.js)
+**v1** see: [**`matching-v1-parentheses.js`**](https://github.com/artificialarea/DSA-Stack-and-Queue/blob/main/matching-v1-parentheses.js)
 
+**v2** see: [**`matching-v2-brackets.js`**](https://github.com/artificialarea/DSA-Stack-and-Queue/blob/main/matching-v2-brackets.js) but with outstanding questions and potential refactor required
+
+**v3** TBD
 
 
 
