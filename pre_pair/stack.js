@@ -15,7 +15,8 @@ class Stack {
            top of the stack */
         if (this.top === null) {
             this.top = new _Node(data, null);
-            return this.top();
+            // return this.top();   // Juan says dismisses this, "as this is mixing apples and oranges". Just `return` suffices
+            return;
         }
 
         /* If the stack already has something, 
