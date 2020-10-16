@@ -24,7 +24,7 @@ class Stack {
            add data to the new node, and
            have the pointer point to the top */
         const node = new _Node(data, this.top);
-        this.top = node; // huh??
+        this.top = node;
     }
 
     pop() {
